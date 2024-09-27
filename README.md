@@ -32,3 +32,11 @@ The Liskov Substitution Principle (LSP) means that you should be able to use a s
 
   1. With LSP: Subclasses like CreditCardPaymentService and PaypalPaymentService properly replace the PaymentService class without breaking the logic of the PaymentComponent. The system is easy to extend and maintain.
   2. Without LSP: Introducing a subclass like CryptoPaymentService that doesn’t properly adhere to the expected behavior of the base class results in runtime errors and requires additional error handling, making the code less maintainable and extensible.
+
+## I: Interface Segregation Principle
+The Interface Segregation Principle (ISP) states that a class should not be required to implement interfaces it doesn't need. In simpler terms, don't force a class to depend on methods it won't use. By following ISP, you can reduce unnecessary connections between components, making your code more flexible, modular, and easier to maintain. By breaking larger interfaces into smaller, more specific ones, you can avoid such problems and keep your code cleaner.
+
+  1. Without: Imagine you're building an e-commerce application and have an interface for different types of payments. If you have a PaymentProcessor interface with a bunch of methods, but not all payment methods require all those methods, you violate the ISP.
+  2. With: you should split the PaymentProcessor interface into smaller, more specific interfaces. This way, each class only implements the methods it actually needs.
+
+
