@@ -39,4 +39,8 @@ The Interface Segregation Principle (ISP) states that a class should not be requ
   1. Without: Imagine you're building an e-commerce application and have an interface for different types of payments. If you have a PaymentProcessor interface with a bunch of methods, but not all payment methods require all those methods, you violate the ISP.
   2. With: you should split the PaymentProcessor interface into smaller, more specific interfaces. This way, each class only implements the methods it actually needs.
 
+## D: Dependency Inversion Principle
+The Dependency Inversion Principle (DIP) is a key concept in object-oriented design that promotes flexibility and maintainability. It states that high-level modules (which contain complex logic) should not rely directly on low-level modules (which handle specific tasks). Instead, both should depend on abstractions (such as interfaces or abstract classes). Additionally, these abstractions should not rely on the details of the low-level modules; the low-level details should depend on the abstractions.
 
+  1. Without: Imagine you are building an Angular service to fetch data from a REST API, and you directly instantiate an HTTP client inside the service
+  2. With: To apply DIP, we can introduce an abstraction in the form of an interface that UserService depends on, and HttpClient becomes just one possible implementation of this abstraction.
