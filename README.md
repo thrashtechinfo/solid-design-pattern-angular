@@ -1,46 +1,27 @@
-# solid-design-pattern-angular
-Usage of Solid Design Pattern in Angular v18
+# SolidDesignPatternAngular
 
-![solid-design-pattern-angular](https://github.com/user-attachments/assets/9eb343a1-9eed-4740-8a59-671cebbbd9cc)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
-##The principle SOLID stands for:
+## Development server
 
-- S: Single Responsibility Principle
-- O: Open/Closed Principle
-- L: Liskov Substitution Principle
-- I: Interface Segregation Principle
-- D: Dependency Inversion Principle
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## S: Single Responsibility Principle
-The Single Responsibility Principle (SRP) means that a class or module should do only one specific thing and have only one reason to change. Each part of your code should focus on a single task or responsibility. If a class or module does too many things, it becomes harder to maintain, understand, and update. By keeping each part of the code focused on one responsibility, you make the code cleaner and easier to manage.
+## Code scaffolding
 
-- Before Applying: Consider a component that displays a list of courses and allows the student to filter them by degree-program.
-- After Applying:
-  1. create a new component that displays the list of courses
-  2. Now, we will create a new component that handles the degree-program filtering
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## O: Open/Closed Principle
-The Open/Closed Principle means that a piece of software, like a class or function, should be designed in a way that allows you to add new features or behavior without changing the existing code. In simple terms, you should be able to extend the software's functionality by adding new code, but you shouldn't need to go back and modify the old code to make improvements. This helps prevent breaking the system and keeps it more stable and flexible for future changes.
+## Build
 
-- Before Applying: We have a component that displays a list of courses. The courses are retrieved and displayed in a table. The table has three columns: course name, instructor, and duration. We have created a CourseListComponent to display this list
-- After Applying:
-  1. UserListComponent: This component will be responsible for displaying the list of users. It will show basic information such as the name, email, and phone number in a table format. When a user is selected, their details will be displayed by the new component.
-  2. UserDetailComponent: This new component will handle displaying additional details for the selected user. It will take the selected user as an input and show more specific information (such as address, age, or other relevant data).
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## L: Liskov Substitution Principle
-The Liskov Substitution Principle (LSP) means that you should be able to use a subclass in place of its superclass without breaking the program. In other words, if a class inherits from another, it should still behave correctly when used in place of the parent class. If a subclass changes how things work too much, it can lead to bugs and unexpected behavior. We ensure that components are loosely coupled to their dependencies, allowing for easy extension and minimal modifications when adding new functionality. Following LSP ensures that your system remains flexible, maintainable, and easy to extend.
+## Running unit tests
 
-  1. With LSP: Subclasses like CreditCardPaymentService and PaypalPaymentService properly replace the PaymentService class without breaking the logic of the PaymentComponent. The system is easy to extend and maintain.
-  2. Without LSP: Introducing a subclass like CryptoPaymentService that doesn’t properly adhere to the expected behavior of the base class results in runtime errors and requires additional error handling, making the code less maintainable and extensible.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## I: Interface Segregation Principle
-The Interface Segregation Principle (ISP) states that a class should not be required to implement interfaces it doesn't need. In simpler terms, don't force a class to depend on methods it won't use. By following ISP, you can reduce unnecessary connections between components, making your code more flexible, modular, and easier to maintain. By breaking larger interfaces into smaller, more specific ones, you can avoid such problems and keep your code cleaner.
+## Running end-to-end tests
 
-  1. Without: Imagine you're building an e-commerce application and have an interface for different types of payments. If you have a PaymentProcessor interface with a bunch of methods, but not all payment methods require all those methods, you violate the ISP.
-  2. With: you should split the PaymentProcessor interface into smaller, more specific interfaces. This way, each class only implements the methods it actually needs.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## D: Dependency Inversion Principle
-The Dependency Inversion Principle (DIP) is a key concept in object-oriented design that promotes flexibility and maintainability. It states that high-level modules (which contain complex logic) should not rely directly on low-level modules (which handle specific tasks). Instead, both should depend on abstractions (such as interfaces or abstract classes). Additionally, these abstractions should not rely on the details of the low-level modules; the low-level details should depend on the abstractions.
+## Further help
 
-  1. Without: Imagine you are building an Angular service to fetch data from a REST API, and you directly instantiate an HTTP client inside the service
-  2. With: To apply DIP, we can introduce an abstraction in the form of an interface that UserService depends on, and HttpClient becomes just one possible implementation of this abstraction.
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
