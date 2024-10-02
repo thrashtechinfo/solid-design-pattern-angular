@@ -1,1 +1,23 @@
-<p>with-isp works!</p>
+<input 
+    type="text" 
+    placeholder="Enter Payment" 
+    class="form-control" 
+    [ngModel]="payment()"
+    (ngModelChange)="payment.set($event)">
+
+<button 
+    (click)="processPayment(payment())" 
+    class="btn btn-success mt-3 me-3"
+    [disabled]="payment() <= 0">
+    Pay ${{payment()}} with Credit Card
+</button>
+
+<button 
+    (click)="refundPayment(payment())" 
+    class="btn btn-primary mt-3 me-3"
+    [disabled]="payment() <= 0">
+    Refund ${{payment()}} from Credit Card
+</button>
+
+
+<p class="mt-3">{{paymentStatus}}</p>
