@@ -1,1 +1,31 @@
-<p>without-ocp works!</p>
+<table class="mb-5 table striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (user of users; track user.name) {
+            <tr (click)="selectUser(user)">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+            </tr>
+        } @empty {
+            <li>There are no users.</li>
+        }
+    </tbody>
+</table>
+
+@if (selectedUser) {
+    <div class="card p-4">
+        <h3>User Details</h3>
+        <p>Name: {{ selectedUser.name }}</p>
+        <p>Email: {{ selectedUser.email }}</p>
+        <p>Phone: {{ selectedUser.phone }}</p>
+        <p>Address: {{ selectedUser.address }}</p>
+        <p>Age: {{ selectedUser.age }}</p>
+    </div>
+}
