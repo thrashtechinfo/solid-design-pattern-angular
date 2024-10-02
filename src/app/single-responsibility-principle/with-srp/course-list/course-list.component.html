@@ -1,0 +1,7 @@
+<ul class="mt-3">
+    @for (course of courses; track course.name) {
+        <li class="py-2">{{ course.name }}</li>
+    } @empty {
+        <li>There are no courses.</li>
+    }
+</ul>
