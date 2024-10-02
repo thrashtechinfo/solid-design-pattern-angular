@@ -20,5 +20,9 @@ export const routes: Routes = [
     {
         path: "interface-segregation-principle",
         loadComponent: () => import('./interface-segregation-principle/interface-segregation-principle.component').then(c => c.InterfaceSegregationPrincipleComponent)
+    },
+    {
+        path: "dependency-inversion-principle",
+        loadComponent: () => import('./dependency-inversion-principle/dependency-inversion-principle.component').then(c => c.DependencyInversionPrincipleComponent)
     }
 ];

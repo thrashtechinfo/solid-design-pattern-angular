@@ -33,7 +33,7 @@ export class HeaderComponent {
     },
     {
       name: "D: DIP",
-      path: "/"
+      path: "/dependency-inversion-principle"
     }
   ]
 }
