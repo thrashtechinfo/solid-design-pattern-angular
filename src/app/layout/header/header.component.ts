@@ -21,7 +21,7 @@ export class HeaderComponent {
     },
     {
       name: "O: OCP",
-      path: "/"
+      path: "/open-closed-principle"
     },
     {
       name: "L: LSP",
