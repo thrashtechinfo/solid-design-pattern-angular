@@ -33,11 +33,11 @@ export class PaymentLspComponent {
     const success = this.paymentService.processPayment(amount);
 
     if (success) {
-      this.paymentStatus = 'Payment successful';
+      this.paymentStatus = 'Payment ' + type + ' successful';
       console.log('Payment successful');
     } 
     else {
-      this.paymentStatus = 'Payment failed';
+      this.paymentStatus = 'Payment ' + type + ' successful';
       console.log('Payment failed');
     }
   }
