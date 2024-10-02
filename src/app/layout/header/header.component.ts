@@ -29,7 +29,7 @@ export class HeaderComponent {
     },
     {
       name: "I: ISP",
-      path: "/"
+      path: "/interface-segregation-principle"
     },
     {
       name: "D: DIP",

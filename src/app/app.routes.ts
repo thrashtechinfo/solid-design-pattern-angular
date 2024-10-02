@@ -16,5 +16,9 @@ export const routes: Routes = [
     {
         path: "liskov-substitution-principle",
         loadComponent: () => import('./liskov-substitution-pinciple/liskov-substitution-pinciple.component').then(c => c.LiskovSubstitutionPincipleComponent)
+    },
+    {
+        path: "interface-segregation-principle",
+        loadComponent: () => import('./interface-segregation-principle/interface-segregation-principle.component').then(c => c.InterfaceSegregationPrincipleComponent)
     }
 ];
