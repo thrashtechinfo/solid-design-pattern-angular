@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ICourse } from '../../interfaces/course.interface';
 
 @Component({
   selector: 'app-without-srp',
@@ -10,7 +11,7 @@ import { Component } from '@angular/core';
 export class WithoutSrpComponent {
   selectedProgram = '';
 
-  courses = [
+  courses: ICourse[] = [
     { name: 'Introduction to AI', program: 'Computer Science' },
     { name: 'Advanced Calculus', program: 'Mathematics' },
     { name: 'Digital Marketing', program: 'Business' },
