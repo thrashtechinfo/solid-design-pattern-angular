@@ -12,5 +12,9 @@ export const routes: Routes = [
     {
         path: "open-closed-principle",
         loadComponent: () => import('./open-closed-principle/open-closed-principle.component').then(c => c.OpenClosedPrincipleComponent)
+    },
+    {
+        path: "liskov-substitution-principle",
+        loadComponent: () => import('./liskov-substitution-pinciple/liskov-substitution-pinciple.component').then(c => c.LiskovSubstitutionPincipleComponent)
     }
 ];

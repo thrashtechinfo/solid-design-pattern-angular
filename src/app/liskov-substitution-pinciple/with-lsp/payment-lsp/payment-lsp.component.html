@@ -1,0 +1,30 @@
+<input 
+    type="text" 
+    placeholder="Enter Payment" 
+    class="form-control" 
+    [ngModel]="payment()"
+    (ngModelChange)="payment.set($event)">
+
+<button 
+    (click)="makePayment(payment(), 'pay')" 
+    class="btn btn-success mt-3 me-3"
+    [disabled]="payment() <= 0">
+    Pay ${{payment()}}
+</button>
+
+<button 
+    (click)="makePayment(payment(), 'credit-card')" 
+    class="btn btn-success mt-3 me-3"
+    [disabled]="payment() <= 0">
+    Pay ${{payment()}} with Credit Card
+</button>
+
+<button 
+    (click)="makePayment(payment(), 'paypal')" 
+    class="btn btn-success mt-3 me-3"
+    [disabled]="payment() <= 0">
+    Pay ${{payment()}} with Paypal
+</button>
+
+
+<p class="mt-3">{{paymentStatus}}</p>

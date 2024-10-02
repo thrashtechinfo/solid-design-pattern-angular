@@ -25,7 +25,7 @@ export class HeaderComponent {
     },
     {
       name: "L: LSP",
-      path: "/"
+      path: "/liskov-substitution-principle"
     },
     {
       name: "I: ISP",
