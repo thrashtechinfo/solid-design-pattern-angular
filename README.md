@@ -7,10 +7,9 @@ Usage of Solid Design Pattern in Angular v18
 
 ![solid-design-pattern-angular](https://github.com/user-attachments/assets/9eb343a1-9eed-4740-8a59-671cebbbd9cc)
 
-![Boost Your Angular Applications to Production-Grade with SOLID Design Principles](https://github.com/user-attachments/assets/e16f3fee-873c-4333-860d-5bc1ee2b05be)
-
 Explore the insightful book 'Boost Your Angular Applications to Production-Grade with SOLID Design Principles' by Muhammad Awais (developerorium/muhammadawaisshaikh), a comprehensive guide to building scalable and maintainable Angular projects by applying SOLID principles.
-[Book: Boost Your Angular Applications to Production-Grade with SOLID Design Principles]([https://github.com/angular/angular-cli](https://www.amazon.com/dp/B0DJQRBTWF/))
+
+![Boost Your Angular Applications to Production-Grade with SOLID Design Principles](https://github.com/user-attachments/assets/e16f3fee-873c-4333-860d-5bc1ee2b05be)
 
 ##The principle SOLID stands for:
 
