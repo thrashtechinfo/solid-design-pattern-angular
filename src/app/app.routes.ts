@@ -6,6 +6,10 @@ export const routes: Routes = [
         loadComponent: () => import('./home/home.component').then(c => c.HomeComponent)
     },
     {
+        path: "home",
+        loadComponent: () => import('./home/home.component').then(c => c.HomeComponent)
+    },
+    {
         path: "single-responsibility-principle",
         loadComponent: () => import('./single-responsibility-principle/single-responsibility-principle.component').then(c => c.SingleResponsibilityPrincipleComponent)
     },
