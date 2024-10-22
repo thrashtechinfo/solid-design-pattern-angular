@@ -16,6 +16,10 @@ interface Route {
 export class HeaderComponent {
   routes: Route[] = [
     {
+      name: "",
+      path: "/home"
+    },
+    {
       name: "S: SRP",
       path: "/single-responsibility-principle"
     },

@@ -1,0 +1,7 @@
+.hashtag-item:last-child {
+    border-right: none !important;
+}
+
+.author-bio img {
+    width: 50%;
+}

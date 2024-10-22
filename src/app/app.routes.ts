@@ -3,7 +3,11 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: "",
-        loadComponent: () => import('./single-responsibility-principle/single-responsibility-principle.component').then(c => c.SingleResponsibilityPrincipleComponent)
+        loadComponent: () => import('./home/home.component').then(c => c.HomeComponent)
+    },
+    {
+        path: "home",
+        loadComponent: () => import('./home/home.component').then(c => c.HomeComponent)
     },
     {
         path: "single-responsibility-principle",
