@@ -17,7 +17,7 @@ export class HeaderComponent {
   routes: Route[] = [
     {
       name: "",
-      path: "/home"
+      path: "/about-the-author"
     },
     {
       name: "S: SRP",
