@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About the Author -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/about-the-author</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Medium Article -->
+  <url>
+    <loc>https://medium.com/javascript-in-plain-english/boost-your-angular-applications-to-production-grade-with-solid-design-principles-9532cc78bb39</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- S: Single Responsibility Principle -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/single-responsibility-principle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- O: The Open/Closed Principle -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/open-closed-principle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- L: Liskov Substitution Principle -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/liskov-substitution-principle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Interface Segregation Principle -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/interface-segregation-principle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- D: Dependency Inversion Principle -->
+  <url>
+    <loc>https://angular-application-with-solid-design-principles.vercel.app/dependency-inversion-principle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Buy from Amazon -->
+  <url>
+    <loc>https://www.amazon.com/Angular-Applications-Production-Grade-Design-Principles/dp/B0DJQRBTWF</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Buy from Goodreads -->
+  <url>
+    <loc>https://www.goodreads.com/book/show/220228979-boost-your-angular-applications-to-production-grade-with-solid-design-pr</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- LinkTree -->
+  <url>
+    <loc>https://linktr.ee/mawaisshaikh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- LinkedIn -->
+  <url>
+    <loc>https://www.linkedin.com/in/muhammadawaisshaikh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Personal Website -->
+  <url>
+    <loc>https://bit.ly/muhammadawaisshaikh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Twitter -->
+  <url>
+    <loc>https://www.twitter.com/developerorium</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
