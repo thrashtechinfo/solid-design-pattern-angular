@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { HashtagsComponent } from '../components/hashtags/hashtags.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [HashtagsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

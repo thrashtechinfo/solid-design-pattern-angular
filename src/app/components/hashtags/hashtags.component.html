@@ -1,0 +1,7 @@
+<div class="d-flex justify-content-center pt-4 flex-wrap">
+    @for (hashtag of hashtags; track hashtag; let i = $index) {
+        <p class="mx-1 hashtag-item" [ngStyle]="{'background': hashtagGradients[i]}">#{{ hashtag }}</p>
+    } @empty {
+        <li>There are no #hashtags.</li>
+    }
+</div>

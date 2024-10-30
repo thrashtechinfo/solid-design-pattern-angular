@@ -2,13 +2,7 @@
     <div class="text-center p-5">
         <h1 class="display-4">{{ bookTitle }}</h1>
 
-        <div class="d-flex justify-content-center pt-4 flex-wrap">
-            @for (hashtag of hashtags; track hashtag) {
-                <p class="px-3 border-end hashtag-item">#{{ hashtag }}</p>
-            } @empty {
-                <li>There are no items.</li>
-            }
-        </div>
+        <app-hashtags [hashtags]="hashtags" />
         
         <div class="purchase-buttons d-flex justify-content-center mt-2 flex-wrap">
             @for (purchase of bookPurchase; track purchase.id) {

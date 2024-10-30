@@ -1,0 +1,10 @@
+.hashtag-item {
+    padding: 10px 20px;
+    border-radius: 30px; /* Add rounded corners */
+    color: white; /* Change text color for better contrast */
+    transition: transform 0.3s; /* Add a hover effect */
+}
+
+.hashtag-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
