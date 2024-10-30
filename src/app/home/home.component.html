@@ -2,7 +2,7 @@
     <div class="text-center p-5">
         <h1 class="display-4">{{ bookTitle }}</h1>
 
-        <div class="d-flex justify-content-center pt-4">
+        <div class="d-flex justify-content-center pt-4 flex-wrap">
             @for (hashtag of hashtags; track hashtag) {
                 <p class="px-3 border-end hashtag-item">#{{ hashtag }}</p>
             } @empty {
@@ -10,9 +10,9 @@
             }
         </div>
         
-        <div class="purchase-buttons d-flex justify-content-center mt-2">
+        <div class="purchase-buttons d-flex justify-content-center mt-2 flex-wrap">
             @for (purchase of bookPurchase; track purchase.id) {
-                <a [href]="purchase.url" target="_blank" class="btn btn-default d-flex align-items-center me-2 border">
+                <a [href]="purchase.url" target="_blank" class="btn btn-default d-flex align-items-center me-2 mb-2 border">
                     <img [src]="purchase.icon" alt="{{ purchase.name }} icon" class="me-2" width="20" height="20">
                     Buy from {{ purchase.name }}
                 </a>
@@ -20,21 +20,23 @@
                 <li>There are no items.</li>
             }
         </div>
+        
         <hr class="my-4">
+        
         <div class="author-bio">
             <p class="text-uppercase text-start text-black-50">About the Author</p>
             <div class="row align-items-center author-bio">
                 <div class="col-md-6 text-start">
                     <h2 class="author-title">Muhammad Awais</h2>
                     <p class="author-description">
-                        Hi there! I'm Muhammad Awais, a internationally recognised passionate Lead Software Engineer /
+                        Hi there! I'm Muhammad Awais, an internationally recognised passionate Lead Software Engineer /
                         Full Stack (Frontend) with 9+ years of experience who finds joy in crafting exceptional web
                         experiences, fixing breaking logic and bug fixes using JavaScript, Typescript, <a href="https://www.youtube.com/developerorium" target="_blank">Angular</a>, React,
-                        NodeJS, [Python] newbie, Artificial Intelligence enthusiast. My days are filled with lines
-                        of code, bringing creativity to life through top-notch technology stack. Additionally, I have
+                        NodeJS, [Python] newbie, and an Artificial Intelligence enthusiast. My days are filled with lines
+                        of code, bringing creativity to life through a top-notch technology stack. Additionally, I have
                         contributed as a tech author for <a href="https://medium.com/@awaisshaikh94" target="_blank">Generative AI</a> and <a href="https://medium.com/@awaisshaikh94" target="_blank">JavaScript in Plain English</a> publications.
-                        Apart from that, I am advocate for best practices and a google developers group, amazon web services <a href="https://medium.com/@awaisshaikh94/technology-talks-20385a38f8b2" target="_blank">technology
-                        speaker</a> of Angular, Ai and other tech dings.
+                        Apart from that, I advocate for best practices and am a Google Developers Group, Amazon Web Services <a href="https://medium.com/@awaisshaikh94/technology-talks-20385a38f8b2" target="_blank">technology
+                        speaker</a> of Angular, AI, and other tech topics.
                     </p>
                     <ul class="author-contact list-unstyled">
                         <li>LinkTree: <a href="https://linktr.ee/mawaisshaikh" target="_blank">https://linktr.ee/mawaisshaikh</a></li>
@@ -45,14 +47,17 @@
                 </div>
 
                 <div class="col-md-6 text-center">
-                    <img src="assets/img/muhammad-awais-author.jpg" loading="lazy" alt="Author Image" class="rounded-circle">
+                    <img src="assets/img/muhammad-awais-author.jpg" loading="lazy" alt="Author Image" class="rounded-circle img-fluid">
                 </div>
             </div>
         </div>
+        
         <hr>
+        
         <a href="https://www.amazon.com/Angular-Applications-Production-Grade-Design-Principles/dp/B0DJQRBTWF" target="_blank">
-            <img src="assets/img/amazon-book-angular-solid.webp" alt="Boost Your Angular Applications to Production-Grade with SOLID Design Principles" loading="lazy" class="w-100" />
+            <img src="assets/img/amazon-book-angular-solid.webp" alt="Boost Your Angular Applications to Production-Grade with SOLID Design Principles" loading="lazy" class="img-fluid" />
         </a>
+        
         <a class="btn btn-success mt-4" href="https://medium.com/javascript-in-plain-english/boost-your-angular-applications-to-production-grade-with-solid-design-principles-9532cc78bb39">More About Book</a>
     </div>
 </div>
