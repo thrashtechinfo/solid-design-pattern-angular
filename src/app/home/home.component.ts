@@ -10,14 +10,16 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   bookTitle: string = 'Boost Your Angular Applications to Production-Grade with SOLID Design Principles';
   hashtags: string[] = ["angular", "typescript", "solid-principles", "scalibility", "author"]
-  bookPurchase: {icon: string, name :string, url: string }[] = [
+  bookPurchase: {id: number, icon: string, name :string, url: string }[] = [
     {
-      icon: 'https://i.ibb.co/xgFbfrC/Amazon-512.webp',
+      id: 1,
+      icon: 'assets/img/amazon.webp',
       name: 'Amazon',
       url: "https://www.amazon.com/Angular-Applications-Production-Grade-Design-Principles/dp/B0DJQRBTWF"
     },
     {
-      icon: 'https://i.ibb.co/HTKzF3N/4494707.png',
+      id: 2,
+      icon: 'assets/img/goodreads.png',
       name: 'Goodreads',
       url: 'https://www.goodreads.com/book/show/220228979-boost-your-angular-applications-to-production-grade-with-solid-design-pr'
     }

@@ -11,7 +11,7 @@
         </div>
         
         <div class="purchase-buttons d-flex justify-content-center mt-2">
-            @for (purchase of bookPurchase; track bookPurchase) {
+            @for (purchase of bookPurchase; track purchase.id) {
                 <a [href]="purchase.url" target="_blank" class="btn btn-default d-flex align-items-center me-2 border">
                     <img [src]="purchase.icon" alt="{{ purchase.name }} icon" class="me-2" width="20" height="20">
                     Buy from {{ purchase.name }}
@@ -45,13 +45,13 @@
                 </div>
 
                 <div class="col-md-6 text-center">
-                    <img src="https://i.ibb.co/1RLx67m/1726148027679.jpg" loading="lazy" alt="Author Image" class="rounded-circle">
+                    <img src="assets/img/muhammad-awais-author.jpg" loading="lazy" alt="Author Image" class="rounded-circle">
                 </div>
             </div>
         </div>
         <hr>
         <a href="https://www.amazon.com/Angular-Applications-Production-Grade-Design-Principles/dp/B0DJQRBTWF" target="_blank">
-            <img src="https://i.ibb.co/kgVntp6/amazon-kindle-paperback.webp" alt="Boost Your Angular Applications to Production-Grade with SOLID Design Principles" loading="lazy" class="w-100" />
+            <img src="assets/img/amazon-book-angular-solid.webp" alt="Boost Your Angular Applications to Production-Grade with SOLID Design Principles" loading="lazy" class="w-100" />
         </a>
         <a class="btn btn-success mt-4" href="https://medium.com/javascript-in-plain-english/boost-your-angular-applications-to-production-grade-with-solid-design-principles-9532cc78bb39">More About Book</a>
     </div>
