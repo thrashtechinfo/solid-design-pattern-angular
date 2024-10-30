@@ -2,8 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
+![Boost Your Angular Applications to Production-Grade with SOLID Design Principles](https://github.com/user-attachments/assets/21c3e640-b3eb-4921-94c3-abb9f8a22d48)
+
 # solid-design-pattern-angular
-Usage of Solid Design Pattern in Angular v18
+Usage of Solid Design Pattern in Angular
 
 ![solid-design-pattern-angular](https://github.com/user-attachments/assets/9eb343a1-9eed-4740-8a59-671cebbbd9cc)
 
